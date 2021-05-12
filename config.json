@@ -1,0 +1,50 @@
+{
+    "params":
+    {
+      "local_server":"True",
+      "local_uri": "mysql://root:@localhost/portfolio",
+      "prod_uri":"mysql://root:@localhost/portfolio",
+      
+      "lnk_url":"https://twitter.com/",
+      "gh_url": "https://github.com/",
+
+      
+      "admin_name":"Apoorva",
+      "admin_btdy":"5 Oct,2001",
+      "admin_loc":"Sector 1,IMT Manesar,Gurugram",
+      "admin_email":"vermaapoorva0510@gmail.com",
+      "admin_phone":"+91 9821214253",
+      "admin_age":"19",
+      
+      
+      "admin_degree":"B.tech, First Year",
+      "admin_website":"https://loving-knuth-fb7a47.netlify.app/",
+
+      "about_desr": "Hi my name is Apoorva ",
+      "resume_desr": "Hi my name is Apoorva ",
+      "skills_desr": "Hi my name is Apoorva ",
+      "portfolio_desr": "Hi my name is Apoorva ",
+      "contact_desr": "Message me directly from here",
+
+      "tag_line": "My Porifolio",
+
+      "python_skill": "70",
+      "c++_skill": "50",
+      "photoshop_skill": "80",
+      "corel_skill": "90",
+      "microsoft_office_skill": "70",
+      "git_skill": "90",
+      "html_skill": "90",
+      "css_skill": "80",
+      "js_skill": "60",
+      "bootstrap_skill": "70",
+      "flask_skill": "60",
+      
+
+      "gmail-user":"vermaapoorva0510@gmail.com",
+      "gmail-password":"Apoorva@124@#"
+      
+      
+    }
+  }
+  

@@ -1,0 +1,87 @@
+{% extends "layout.html" %}
+{% block body %}
+
+
+<main id="main">
+
+    <!-- ======= Breadcrumbs ======= -->
+    <section id="breadcrumbs" class="breadcrumbs">
+      <div class="container">
+
+        <div class="d-flex justify-content-between align-items-center">
+          <h2>DBMS Project</h2>
+          <ol>
+            <li><a href="/index">Home</a></li>
+            <li>Portfolio</li>
+          </ol>
+        </div>
+      </div>
+    </section><!-- End Breadcrumbs -->
+
+    <!-- ======= Portfolio Details Section ======= -->
+    <section id="portfolio-details" class="portfolio-details">
+      <div class="container">
+
+
+          <div class="portfolio-details-slider swiper-container">
+            <div class="swiper-wrapper align-items-center">
+
+              <div class="swiper-slide">
+                <img src="{{ url_for('static', filename='img/portfolio/portfolio-1.jpg') }}" alt="">
+              </div>
+
+              <div class="swiper-slide">
+                <img src="{{ url_for('static', filename='img/portfolio/portfolio-2.jpg') }}" alt="">
+              </div>
+
+              <div class="swiper-slide">
+                <img src="{{ url_for('static', filename='img/portfolio/portfolio-3.jpg') }}" alt="">
+              </div>
+
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+
+          <div class="portfolio-info">
+            <h3>Project information</h3>
+            <ul>
+
+                <li><strong>Professor</strong>: <a href="#" target='_blank'>Md. Shad Akhtar</a></li>
+              <li><strong>Project date</strong>: Jan - April 2020</li>
+              <li><strong>Project URL</strong>: <a href="#" target="_blank">Click here</a></li>
+            </ul>
+          </div>
+
+        </div>
+
+        <div class="portfolio-description">
+            <h2><b>Project Name</b></h2>
+            <h6><b>Technologies:</b> HTML, CSS, JS, Flask, MySQL</h6>
+          <p>
+            A platform which constantly keeps track of user calorie intake and appropriately suggests various meals, while
+            incentivizing a healthy lifestyle by providing coupon discounts for various fitness products and by various insurance
+            companies. Keeping track of user’s calorie intake & suggest food recommendations based on the user’s daily
+            calorie intake Suggest workout regimens based on daily user physical activity Link user account, and share daily
+            lifestyle statistics with your dietician’s account to directly receive feedback about your current calorie intake, and suggestions regarding your workout regimen. Link daily activities and intake trends to medical record Closely
+            monitor at-risk patients and direct feedback their data to a hospital approved by the user, where the hospital will
+            deploy emergency services in case of unprecedented irregularities. <br>
+              <b>Github:</b><a href="#" target="_blank">
+              github.com/nahimilega/Butter_Naan </a><br>
+              <b>Hosted On:</b> <a href="#" target="_blank">
+              butternaan.herokuapp.com/dash</a> (<b>Email:</b> brayan.tromp@example.com and <b>Password:</b> temp)
+              <br>
+              <b>Project Report:</b> <a href="#" target="_blank">
+                drive.google.com/file/d/1D7Dltwvw8dpfSHcYWNhE4mtZ6fPF3cF0/view</a>
+          </p>
+        </div>
+
+      </div>
+    </section><!-- End Portfolio Details Section -->
+
+  </main><!-- End #main -->
+
+  <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
+
+  <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+
+  {% endblock %}
