@@ -32,13 +32,14 @@ app.config['SQLALCHEMY_DATABASE_URI'] = "postgresql://dyyvuvxhgzlpuy:e3973f5ee47
 
 db = SQLAlchemy(app)
 class Contacts(db.Model):
+     __tablename__ = 'contacts'
 
     sno = db.Column(db.Integer, primary_key=True,nullable=False,autoincrement=True)
-    name = db.Column(db.String(10), nullable=False)
-    message = db.Column(db.String(50), nullable=False)
-    subject = db.Column(db.String(20), nullable=False)
-    date = db.Column(db.String(4), nullable=True)
-    email = db.Column(db.String(10), nullable=False)
+    name = db.Column(db.String(110), nullable=False)
+    message = db.Column(db.String(170), nullable=False)
+    subject = db.Column(db.String(150), nullable=False)
+    date = db.Column(db.String(110), nullable=True)
+    email = db.Column(db.String(115), nullable=False)
 
 
     def __init__(self,name,message,subject,date,email):
