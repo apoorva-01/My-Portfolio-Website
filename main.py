@@ -32,7 +32,7 @@ app.config['SQLALCHEMY_DATABASE_URI'] = "postgresql://dyyvuvxhgzlpuy:e3973f5ee47
 
 db = SQLAlchemy(app)
 class Contacts(db.Model):
-     __tablename__ = 'contacts'
+     # __tablename__ = 'contacts'
 
     sno = db.Column(db.Integer, primary_key=True,nullable=False,autoincrement=True)
     name = db.Column(db.String(110), nullable=False)
