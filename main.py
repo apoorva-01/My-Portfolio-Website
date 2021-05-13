@@ -34,11 +34,11 @@ db = SQLAlchemy(app)
 class Contacts(db.Model):
 
     sno = db.Column(db.Integer, primary_key=True,nullable=False,autoincrement=True)
-    name = db.Column(db.String(80), nullable=False)
-    message = db.Column(db.String(120), nullable=False)
-    subject = db.Column(db.String(120), nullable=False)
-    date = db.Column(db.String(12), nullable=True)
-    email = db.Column(db.String(20), nullable=False)
+    name = db.Column(db.String(10), nullable=False)
+    message = db.Column(db.String(50), nullable=False)
+    subject = db.Column(db.String(20), nullable=False)
+    date = db.Column(db.String(4), nullable=True)
+    email = db.Column(db.String(10), nullable=False)
 
 
     def __init__(self,name,message,subject,date,email):
