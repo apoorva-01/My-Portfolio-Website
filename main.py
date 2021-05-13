@@ -12,15 +12,15 @@ with open('config.json', 'r') as c:
 
 app = Flask(__name__)
 # For mail when someone sends you a message|
-app.config.update(
-    MAIL_SERVER = 'smtp.gmail.com',
-    MAIL_PORT = '465',
-    MAIL_USE_SSL = True,
-    MAIL_USERNAME = params['gmail-user'],
-    MAIL_PASSWORD=  params['gmail-password']
-)
+# app.config.update(
+#     MAIL_SERVER = 'smtp.gmail.com',
+#     MAIL_PORT = '465',
+#     MAIL_USE_SSL = True,
+#     MAIL_USERNAME = params['gmail-user'],
+#     MAIL_PASSWORD=  params['gmail-password']
+# )
 
-mail = Mail(app)
+# mail = Mail(app)
 
 
 app.secret_key = 'super-secret-key'
@@ -63,11 +63,13 @@ def contact():
         entry = Contacts(name=name,subject=subject,  message = message, date= datetime.now(),email = email )
         db.session.add(entry)
         db.session.commit()
-        mail.send_message('New message from ' + name,
-                          sender=email,
-                          recipients = [params['gmail-user']],
-                          body = subject + "\n" + message
-                          )
+        contact_details =Contacts.query.all()
+        return render_template("index.html", contact_details=contact_details, params=params)
+     #    mail.send_message('New message from ' + name,
+     #                      sender=email,
+     #                      recipients = [params['gmail-user']],
+     #                      body = subject + "\n" + message
+     #                      )
      return render_template('contact.html', params=params)
      
 
