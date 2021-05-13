@@ -19,6 +19,7 @@ app.config.update(
     MAIL_USERNAME = params['gmail-user'],
     MAIL_PASSWORD=  params['gmail-password']
 )
+
 mail = Mail(app)
 
 
