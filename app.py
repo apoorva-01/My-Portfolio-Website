@@ -24,12 +24,9 @@ mail = Mail(app)
 
 app.secret_key = 'super-secret-key'
 
-# Connecting to local server
-local_server = True
-if(local_server):
-    app.config['SQLALCHEMY_DATABASE_URI'] = params['local_uri']
-else:
-    app.config['SQLALCHEMY_DATABASE_URI'] = params['prod_uri']
+
+app.config['SQLALCHEMY_DATABASE_URI'] = "postgres://dyyvuvxhgzlpuy:e3973f5ee47536af1e060a3d1ce6efe8a2bea4e280c1fb283e106b2902e0458d@ec2-3-233-7-12.compute-1.amazonaws.com:5432/dei0s1ltgofuf4"
+
 
 db = SQLAlchemy(app)
 class Contacts(db.Model):
