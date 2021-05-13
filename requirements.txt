@@ -10,3 +10,4 @@ MarkupSafe==2.0.0
 SQLAlchemy==1.4.15
 Werkzeug==2.0.0
 flask_mail==0.9.1
+psycopg2==2.8.6
