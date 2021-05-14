@@ -1,17 +1,19 @@
 
 # This is my Resume Website<br>
+[Website Link](https://my-main-portfolio-website.herokuapp.com/)<br>
+
 <h2>Technologies Used :</h2><br>
- -Flask<br>
- -HTML5<br>
- -CSS3<br>
- -SCSS/SAAS<br>
- -Bootstrap<br>
- -Javascript<br>
- -Jquery<br>
+  - Flask<br>
+  - HTML5<br>
+  - CSS3<br>
+  - SCSS/SAAS<br>
+  - Bootstrap<br>
+  - Javascript<br>
+  - Jquery<br>
  
 
-## Link
-[Website Link](https://my-main-portfolio-website.herokuapp.com/)
+
+
 
 
 
