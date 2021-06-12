@@ -15,6 +15,8 @@
       "admin_email":"vermaapoorva0510@gmail.com",
       "admin_phone":"+91 9821214253",
       "admin_age":"19",
+      "admin_interest":"Machine Learning",
+      "admin_address":"Delhi",
       
       
       "admin_degree":"B.tech, First Year",
@@ -41,8 +43,8 @@
       "flask_skill": "60",
       
 
-      "gmail-user":"vermaapoorva0510@gmail.com",
-      "gmail-password":"Apoorva@124@#"
+      "gmail-user":"main.hu.demo@gmail.com",
+      "gmail-password":"merkonhipta"
       
       
     }

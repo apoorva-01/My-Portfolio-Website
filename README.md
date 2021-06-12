@@ -12,12 +12,6 @@
   - Jquery<br>
  
 
-
-
-
-
-
-
 ## Hero
 ![Hero Image](static/img/readme_pic1.jpg?raw=true "Title")
 <br>
@@ -35,7 +29,6 @@
 <br>
 ## Contact
 ![Contact Image](static/img/readme_pic6.jpg?raw=true "Title")
-
 
 
 
